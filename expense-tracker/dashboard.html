@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h1 style="text-align: center;">Expense Tracker Application</h1>
+
+<div class="form">
+  <input id="category" placeholder="Category">
+  <input id="amount" type="number" placeholder="Amount">
+  <input id="comment" placeholder="Comment (optional)">
+  <button id="addBtn" class="add-btn" onclick="addExpense()">Add Expense</button>
+  <button id="updateBtn" class="edit-btn" onclick="updateExpense()" style="display:none;">
+  Update Expense
+  </button>
+
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>             
+      <th>Amount</th>
+      <th>Created</th>
+      <th>Updated</th>
+      <th>Comment</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="expenseTable"></tbody>
+</table>
+
+<div class="chart-container">
+  <canvas id="chart"></canvas>
+</div>
+
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
