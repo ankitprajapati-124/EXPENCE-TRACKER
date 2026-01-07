@@ -50,7 +50,7 @@ It is built with **HTML**, **CSS**, and **JavaScript**, and provides a clean int
 
 # Future Improvements
 
-You could enhance this app by adding:
+Enhance this app by adding:
 
 ✔ Expense categories
 ✔ Monthly & yearly summaries
